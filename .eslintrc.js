@@ -32,5 +32,6 @@ module.exports = {
     'react/no-unstable-nested-components': 'off',
     'react-hooks/rules-of-hooks': 'off',
     'react/no-array-index-key': 'off',
+    'max-len': 'off',
   },
 };
