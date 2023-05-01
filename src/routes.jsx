@@ -12,7 +12,7 @@ import PrivateRoute from './middleware/PrivateRoute';
 import { useAuth } from './hooks/useAuth';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
-import Appointment from './pages/Appointment/Appointment';
+import Appointment from './pages/Appointment';
 // ----------------------------------------------------------------------
 
 export default function Router() {

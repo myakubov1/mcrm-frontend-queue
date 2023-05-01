@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import ThemeProvider from './theme';
+import { ThemeProvider } from '@mui/material';
 import { UserProvider } from './hooks/useAuth';
 import Router from './routes';
 import store from './store/store';
@@ -9,11 +9,9 @@ function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <ThemeProvider>
-          <UserProvider>
-            <Router />
-          </UserProvider>
-        </ThemeProvider>
+        <UserProvider>
+          <Router />
+        </UserProvider>
       </BrowserRouter>
     </Provider>
   );
